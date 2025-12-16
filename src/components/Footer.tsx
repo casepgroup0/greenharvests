@@ -13,7 +13,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-foreground text-background pt-16 pb-8">
+    <footer id="contact" className="bg-foreground text-background pt-16 pb-8">
       <div className="container">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}

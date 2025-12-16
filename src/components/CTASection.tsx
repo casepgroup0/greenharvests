@@ -19,11 +19,19 @@ export function CTASection() {
             Let's grow together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="default" size="xl">
+            <Button 
+              variant="default" 
+              size="xl"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Get in Touch
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="outline" size="xl">
+            <Button 
+              variant="outline" 
+              size="xl"
+              onClick={() => document.getElementById('produce')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               View Our Catalog
             </Button>
           </div>
