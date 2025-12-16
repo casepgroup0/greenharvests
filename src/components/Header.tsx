@@ -54,7 +54,11 @@ export function Header() {
               {link.name}
             </a>
           ))}
-          <Button variant={isScrolled ? "default" : "hero"} size="lg">
+          <Button 
+            variant={isScrolled ? "default" : "hero"} 
+            size="lg"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Contact Us
           </Button>
         </nav>
@@ -83,7 +87,15 @@ export function Header() {
                 {link.name}
               </a>
             ))}
-            <Button variant="default" size="lg" className="mt-2">
+            <Button 
+              variant="default" 
+              size="lg" 
+              className="mt-2"
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Contact Us
             </Button>
           </nav>

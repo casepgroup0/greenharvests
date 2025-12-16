@@ -35,11 +35,19 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-up stagger-3">
-            <Button variant="hero" size="xl">
+            <Button 
+              variant="hero" 
+              size="xl"
+              onClick={() => document.getElementById('produce')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Explore Our Produce
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="heroOutline" size="xl">
+            <Button 
+              variant="heroOutline" 
+              size="xl"
+              onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <Play className="mr-2 h-5 w-5" />
               Watch Our Story
             </Button>
