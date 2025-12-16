@@ -37,7 +37,7 @@ export function Header() {
             <Leaf className={`h-6 w-6 transition-colors ${isScrolled ? 'text-primary-foreground' : 'text-primary-foreground'}`} />
           </div>
           <span className={`font-display text-2xl font-bold transition-colors ${isScrolled ? 'text-foreground' : 'text-primary-foreground'}`}>
-            Green<span className="text-accent">Harvest</span>
+            Green<span className="text-accent">Harvests</span>
           </span>
         </a>
 

@@ -32,7 +32,7 @@ export function AboutSection() {
           {/* Content */}
           <div>
             <span className="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-4">
-              About GreenHarvest
+              About GreenHarvests
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
               Our Journey to{" "}
@@ -40,7 +40,7 @@ export function AboutSection() {
             </h2>
             <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
               What started as a passion project one year ago has blossomed into a 
-              trusted name in fresh produce. At GreenHarvest, we believe that 
+              trusted name in fresh produce. At GreenHarvests, we believe that 
               vegetables should be more than just food — they should be a 
               celebration of nature's finest gifts.
             </p>
