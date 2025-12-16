@@ -29,7 +29,7 @@ const features = [
   {
     icon: Award,
     title: "Trusted by Many",
-    description: "Join 500+ satisfied customers who choose GreenHarvest.",
+    description: "Join 500+ satisfied customers who choose GreenHarvests.",
   },
 ];
 
@@ -43,7 +43,7 @@ export function WhyChooseUsSection() {
             Why Choose Us
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-            The GreenHarvest{" "}
+            The GreenHarvests{" "}
             <span className="text-primary">Difference</span>
           </h2>
           <p className="text-muted-foreground text-lg">

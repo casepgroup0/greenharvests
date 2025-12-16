@@ -5,25 +5,25 @@ const testimonials = [
   {
     name: "Sarah Johnson",
     role: "Restaurant Owner",
-    content: "GreenHarvest has transformed our menu. The freshness of their vegetables is unmatched, and our customers can taste the difference. Truly exceptional quality!",
+    content: "GreenHarvests has transformed our menu. The freshness of their vegetables is unmatched, and our customers can taste the difference. Truly exceptional quality!",
     rating: 5,
   },
   {
     name: "Michael Chen",
     role: "Health Food Store Manager",
-    content: "As someone who's picky about produce quality, I can confidently say GreenHarvest exceeds expectations. Their commitment to sustainable farming shows in every delivery.",
+    content: "As someone who's picky about produce quality, I can confidently say GreenHarvests exceeds expectations. Their commitment to sustainable farming shows in every delivery.",
     rating: 5,
   },
   {
     name: "Emily Rodriguez",
     role: "Home Chef",
-    content: "Finally, vegetables that taste like they should! The tomatoes are so flavorful, and the leafy greens stay fresh for days. GreenHarvest is now my only choice.",
+    content: "Finally, vegetables that taste like they should! The tomatoes are so flavorful, and the leafy greens stay fresh for days. GreenHarvests is now my only choice.",
     rating: 5,
   },
   {
     name: "David Okonkwo",
     role: "Wholesale Buyer",
-    content: "Reliable, consistent, and always fresh. GreenHarvest has been our trusted supplier for months. Their customer service is just as good as their produce.",
+    content: "Reliable, consistent, and always fresh. GreenHarvests has been our trusted supplier for months. Their customer service is just as good as their produce.",
     rating: 5,
   },
 ];
@@ -52,7 +52,7 @@ export function TestimonialsSection() {
           </h2>
           <p className="text-primary-foreground/80 text-lg">
             Don't just take our word for it — hear from the people who trust 
-            GreenHarvest for their fresh produce needs.
+            GreenHarvests for their fresh produce needs.
           </p>
         </div>
 

@@ -22,9 +22,9 @@ export function Footer() {
               <div className="p-2 bg-primary rounded-full">
                 <Leaf className="h-5 w-5 text-primary-foreground" />
               </div>
-              <span className="font-display text-2xl font-bold text-background">
-                Green<span className="text-accent">Harvest</span>
-              </span>
+            <span className="font-display text-2xl font-bold text-background">
+              Green<span className="text-accent">Harvests</span>
+            </span>
             </a>
             <p className="text-background/70 mb-6">
               Fresh vegetables grown with care, delivered with love. Your trusted 
@@ -61,15 +61,15 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-background/70">123 Farm Road, Green Valley, CA 90210</span>
+                <span className="text-background/70">98 Farm Road, Green Valley, CA 90210</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-accent" />
-                <span className="text-background/70">+1 (555) 123-4567</span>
+                <span className="text-background/70">+1 (523)-774-2161</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-accent" />
-                <span className="text-background/70">hello@greenharvest.com</span>
+                <span className="text-background/70">hello@greenharvests.com</span>
               </li>
             </ul>
           </div>
@@ -99,11 +99,14 @@ export function Footer() {
         {/* Bottom */}
         <div className="pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-background/50 text-sm">
-            © {new Date().getFullYear()} GreenHarvest. All rights reserved.
+            © 2024 GreenHarvests. All rights reserved.
           </p>
-          <div className="flex gap-6 text-sm">
-            <a href="#" className="text-background/50 hover:text-accent transition-colors">Privacy Policy</a>
-            <a href="#" className="text-background/50 hover:text-accent transition-colors">Terms of Service</a>
+          <div className="flex flex-col items-center md:items-end gap-2">
+            <div className="flex gap-6 text-sm">
+              <a href="#" className="text-background/50 hover:text-accent transition-colors">Privacy Policy</a>
+              <a href="#" className="text-background/50 hover:text-accent transition-colors">Terms of Service</a>
+            </div>
+            <p className="text-background/50 text-sm">Developer: CASEP Group</p>
           </div>
         </div>
       </div>
