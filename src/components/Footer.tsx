@@ -106,7 +106,7 @@ export function Footer() {
               <a href="#" className="text-background/50 hover:text-accent transition-colors">Privacy Policy</a>
               <a href="#" className="text-background/50 hover:text-accent transition-colors">Terms of Service</a>
             </div>
-            <p className="text-background/50 text-sm">Developer: CASEP Group</p>
+            <p className="text-background/40 text-xs">Developer: CASEP Group (CalebAgyeiSey)</p>
           </div>
         </div>
       </div>
