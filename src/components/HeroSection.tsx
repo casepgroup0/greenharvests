@@ -16,56 +16,58 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="container relative z-10 pt-20">
-        <div className="max-w-3xl">
-          <span className="inline-flex items-center gap-2 bg-accent/90 text-accent-foreground px-4 py-2 rounded-full text-sm font-semibold mb-6 animate-fade-up">
-            <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+      <div className="container relative z-10 pt-20 lg:pt-32">
+        <div className="max-w-4xl lg:max-w-5xl">
+          <span className="inline-flex items-center gap-2 bg-accent/90 text-accent-foreground px-4 py-2 lg:px-6 lg:py-3 rounded-full text-sm lg:text-base font-semibold mb-6 lg:mb-8 animate-fade-up">
+            <span className="w-2 h-2 lg:w-3 lg:h-3 bg-primary rounded-full animate-pulse" />
             Trusted by 500+ Happy Customers
           </span>
           
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 animate-fade-up stagger-1">
+          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-primary-foreground mb-6 lg:mb-8 animate-fade-up stagger-1">
             Fresh Vegetables,{" "}
             <span className="text-accent">Grown with Care</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl animate-fade-up stagger-2">
+          <p className="text-lg md:text-xl lg:text-2xl text-primary-foreground/90 mb-8 lg:mb-12 max-w-2xl lg:max-w-3xl animate-fade-up stagger-2">
             From our fields to your table — premium, sustainably grown vegetables 
             that deliver unmatched freshness, quality, and taste. One year of 
             excellence, a lifetime of trust.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 animate-fade-up stagger-3">
+          <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 animate-fade-up stagger-3">
             <Button 
               variant="hero" 
               size="xl"
+              className="lg:text-lg lg:px-10 lg:py-7"
               onClick={() => document.getElementById('produce')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Explore Our Produce
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <ArrowRight className="ml-2 h-5 w-5 lg:h-6 lg:w-6" />
             </Button>
             <Button 
               variant="heroOutline" 
               size="xl"
+              className="lg:text-lg lg:px-10 lg:py-7"
               onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              <Play className="mr-2 h-5 w-5" />
+              <Play className="mr-2 h-5 w-5 lg:h-6 lg:w-6" />
               Watch Our Story
             </Button>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-primary-foreground/20 animate-fade-up stagger-4">
+          <div className="grid grid-cols-3 gap-8 lg:gap-16 mt-16 lg:mt-24 pt-8 lg:pt-12 border-t border-primary-foreground/20 animate-fade-up stagger-4">
             <div>
-              <p className="font-display text-4xl font-bold text-accent">1+</p>
-              <p className="text-primary-foreground/80 text-sm">Year of Excellence</p>
+              <p className="font-display text-4xl lg:text-6xl font-bold text-accent">1+</p>
+              <p className="text-primary-foreground/80 text-sm lg:text-base">Year of Excellence</p>
             </div>
             <div>
-              <p className="font-display text-4xl font-bold text-accent">500+</p>
-              <p className="text-primary-foreground/80 text-sm">Happy Customers</p>
+              <p className="font-display text-4xl lg:text-6xl font-bold text-accent">500+</p>
+              <p className="text-primary-foreground/80 text-sm lg:text-base">Happy Customers</p>
             </div>
             <div>
-              <p className="font-display text-4xl font-bold text-accent">100%</p>
-              <p className="text-primary-foreground/80 text-sm">Fresh & Organic</p>
+              <p className="font-display text-4xl lg:text-6xl font-bold text-accent">100%</p>
+              <p className="text-primary-foreground/80 text-sm lg:text-base">Fresh & Organic</p>
             </div>
           </div>
         </div>
