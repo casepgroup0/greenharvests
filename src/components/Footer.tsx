@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Leaf, Mail, Phone, MapPin, Facebook, Instagram, Twitter, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   const [email, setEmail] = useState("");
-
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
     // Frontend only - just clear the input
@@ -103,7 +103,7 @@ export function Footer() {
           </p>
           <div className="flex flex-col items-center md:items-end gap-2">
             <div className="flex gap-6 text-sm">
-              <a href="#" className="text-background/50 hover:text-accent transition-colors">Privacy Policy</a>
+              <Link to="/privacy-policy" className="text-background/50 hover:text-accent transition-colors">Privacy Policy</Link>
               <a href="#" className="text-background/50 hover:text-accent transition-colors">Terms of Service</a>
             </div>
             <p className="text-background/40 text-xs">Developer: CASEP Group (CalebAgyeiSey)</p>
