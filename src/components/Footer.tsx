@@ -104,7 +104,7 @@ export function Footer() {
           <div className="flex flex-col items-center md:items-end gap-2">
             <div className="flex gap-6 text-sm">
               <Link to="/privacy-policy" className="text-background/50 hover:text-accent transition-colors">Privacy Policy</Link>
-              <a href="#" className="text-background/50 hover:text-accent transition-colors">Terms of Service</a>
+              <Link to="/terms-conditions" className="text-background/50 hover:text-accent transition-colors">Terms & Conditions</Link>
             </div>
             <p className="text-background/40 text-xs">Developer: CASEP Group (CalebAgyeiSey)</p>
           </div>
