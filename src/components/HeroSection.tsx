@@ -56,18 +56,18 @@ export function HeroSection() {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 lg:gap-16 mt-16 lg:mt-24 pt-8 lg:pt-12 border-t border-primary-foreground/20 animate-fade-up stagger-4">
+          <div className="grid grid-cols-3 gap-8 lg:gap-20 xl:gap-28 mt-16 lg:mt-24 pt-8 lg:pt-12 border-t border-primary-foreground/20 animate-fade-up stagger-4">
             <div>
-              <p className="font-display text-4xl lg:text-6xl font-bold text-accent">1+</p>
-              <p className="text-primary-foreground/80 text-sm lg:text-base">Year of Excellence</p>
+              <p className="font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-accent">1+</p>
+              <p className="text-primary-foreground/80 text-sm md:text-base lg:text-lg xl:text-xl">Year of Excellence</p>
             </div>
             <div>
-              <p className="font-display text-4xl lg:text-6xl font-bold text-accent">500+</p>
-              <p className="text-primary-foreground/80 text-sm lg:text-base">Happy Customers</p>
+              <p className="font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-accent">500+</p>
+              <p className="text-primary-foreground/80 text-sm md:text-base lg:text-lg xl:text-xl">Happy Customers</p>
             </div>
             <div>
-              <p className="font-display text-4xl lg:text-6xl font-bold text-accent">100%</p>
-              <p className="text-primary-foreground/80 text-sm lg:text-base">Fresh & Organic</p>
+              <p className="font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-accent">100%</p>
+              <p className="text-primary-foreground/80 text-sm md:text-base lg:text-lg xl:text-xl">Fresh & Organic</p>
             </div>
           </div>
         </div>
