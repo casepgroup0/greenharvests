@@ -1,5 +1,5 @@
-import { Truck, Shield, DollarSign, Leaf, Clock, Award } from "lucide-react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Leaf, DollarSign, Shield, Truck, Clock, Award, CheckCircle } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const features = [
   {
@@ -65,88 +65,69 @@ const features = [
     details: {
       heading: "Building Relationships, One Delivery at a Time",
       content: "Our growing community of over 500 satisfied customers speaks to the quality and reliability of our service. From individual families to restaurants and catering businesses, customers choose GreenHarvests for our consistency, quality, and exceptional customer service. We're proud of every relationship we've built and remain committed to exceeding expectations with every order.",
-      highlights: ["500+ happy customers", "Restaurants & businesses served", "98% customer retention rate", "Community partnerships"],
+      highlights: ["500+ happy customers", "Restaurant & business partnerships", "5-star average rating", "Dedicated customer support"],
     },
   },
 ];
 
-export function WhyChooseUsSection() {
+const WhyChooseUsSection = () => {
   return (
-    <section id="why-us" className="py-24 bg-background">
-      <div className="container">
-        {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-4">
-            Why Choose Us
-          </span>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-            The GreenHarvests{" "}
-            <span className="text-primary">Difference</span>
+    <section id="why-us" className="py-20 bg-secondary/30">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4">
+            Why Choose GreenHarvests?
           </h2>
-          <p className="text-muted-foreground text-lg">
-            We're not just farmers — we're your partners in healthy living. 
-            Here's what sets us apart.
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            We're committed to bringing you the freshest, highest-quality vegetables 
+            while supporting sustainable farming practices.
           </p>
         </div>
 
-        {/* Tabbed Features */}
-        <Tabs defaultValue="farm-fresh" className="w-full">
-          <TabsList className="flex flex-wrap justify-center gap-2 h-auto bg-transparent mb-8">
+        <div className="max-w-4xl mx-auto">
+          <Accordion type="single" collapsible className="space-y-4">
             {features.map((feature) => (
-              <TabsTrigger
-                key={feature.id}
+              <AccordionItem 
+                key={feature.id} 
                 value={feature.id}
-                className="flex items-center gap-2 px-4 py-3 rounded-xl bg-card border border-border data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:border-primary hover:border-primary/50 transition-all duration-300"
+                className="bg-card border border-border rounded-lg px-6 shadow-sm hover:shadow-md transition-shadow"
               >
-                <feature.icon className="w-5 h-5" />
-                <span className="hidden sm:inline font-medium">{feature.title}</span>
-              </TabsTrigger>
-            ))}
-          </TabsList>
-
-          {features.map((feature) => (
-            <TabsContent
-              key={feature.id}
-              value={feature.id}
-              className="animate-fade-in"
-            >
-              <div className="bg-card border border-border rounded-2xl p-8 md:p-12">
-                <div className="flex flex-col lg:flex-row gap-8 items-start">
-                  {/* Icon & Title */}
-                  <div className="flex-shrink-0">
-                    <div className="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
-                      <feature.icon className="w-10 h-10 text-primary" />
+                <AccordionTrigger className="hover:no-underline py-5">
+                  <div className="flex items-center gap-4 text-left">
+                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shrink-0">
+                      <feature.icon className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg text-foreground">{feature.title}</h3>
+                      <p className="text-sm text-muted-foreground">{feature.description}</p>
                     </div>
                   </div>
-
-                  {/* Content */}
-                  <div className="flex-1">
-                    <h3 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">
+                </AccordionTrigger>
+                <AccordionContent className="pb-6">
+                  <div className="pl-16 space-y-4">
+                    <h4 className="text-xl font-serif font-semibold text-primary">
                       {feature.details.heading}
-                    </h3>
-                    <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                    </h4>
+                    <p className="text-muted-foreground leading-relaxed">
                       {feature.details.content}
                     </p>
-
-                    {/* Highlights */}
-                    <div className="grid sm:grid-cols-2 gap-3">
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2">
                       {feature.details.highlights.map((highlight, index) => (
-                        <div
-                          key={index}
-                          className="flex items-center gap-3 p-3 bg-primary/5 rounded-lg"
-                        >
-                          <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0" />
-                          <span className="text-foreground font-medium">{highlight}</span>
-                        </div>
+                        <li key={index} className="flex items-center gap-2 text-sm text-foreground">
+                          <CheckCircle className="w-4 h-4 text-primary shrink-0" />
+                          {highlight}
+                        </li>
                       ))}
-                    </div>
+                    </ul>
                   </div>
-                </div>
-              </div>
-            </TabsContent>
-          ))}
-        </Tabs>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
       </div>
     </section>
   );
-}
+};
+
+export default WhyChooseUsSection;

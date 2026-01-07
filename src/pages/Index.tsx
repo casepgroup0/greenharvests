@@ -2,7 +2,7 @@ import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ProduceSection } from "@/components/ProduceSection";
-import { WhyChooseUsSection } from "@/components/WhyChooseUsSection";
+import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { GallerySection } from "@/components/GallerySection";
 import { CTASection } from "@/components/CTASection";
