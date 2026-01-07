@@ -99,7 +99,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-background/50 text-sm">
-            © 2024 GreenHarvests. All rights reserved.
+            © 2026 GreenHarvests. All rights reserved.
           </p>
           <div className="flex flex-col items-center md:items-end gap-2">
             <div className="flex gap-6 text-sm">
