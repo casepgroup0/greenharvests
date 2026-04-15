@@ -106,7 +106,7 @@ export function Footer() {
               <Link to="/privacy-policy" className="text-background/50 hover:text-accent transition-colors">Privacy Policy</Link>
               <Link to="/terms-conditions" className="text-background/50 hover:text-accent transition-colors">Terms & Conditions</Link>
             </div>
-            <p className="text-background/40 text-xs">Developer: CASEP Group (CalebAgyeiSey)</p>
+            <p className="text-background/40 text-xs">Built by: CASEP GROUP</p>
           </div>
         </div>
       </div>
